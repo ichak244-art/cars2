@@ -328,6 +328,13 @@ header {
 }
 
 
+@media (max-width: 991px) {
+    .reeding-sectionText {
+        margin-right: 0;
+        text-align: center;
+    }
+}
+
 @media (max-width: 767px) {
     .reeding-section {
         justify-content: center;
@@ -335,5 +342,7 @@ header {
 
     .reeding-sectionText {
         margin-right: 0;
+        text-align: center;
     }
 }
+
