@@ -110,6 +110,7 @@ header {
     justify-content: center;
     background-color: #ECE7E4;
     padding: 5rem;
+    flex: 1
 }
 
 .hero-content-firstParagraph {
@@ -136,7 +137,7 @@ header {
     max-width: 500px;
 }
 
-.hero-content a {
+.hero-link {
     display: block;
     color: #1B1A1A;
     line-height: 24px;
@@ -146,6 +147,7 @@ header {
 }
 
 .hero-image img {
+    width: 100%;
     height: 100%;
     display: block;
 }
@@ -170,7 +172,7 @@ header {
         line-height: 22px;
     }
 
-    .hero-content a {
+    .hero-link {
         font-size: 15px;
     }
 }
@@ -201,5 +203,132 @@ header {
 
     .hero-image img {
         width: 100%;
+    }
+}
+
+/* firm-section */
+
+.firm-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10rem;
+    background-color: white;
+}
+
+.firm-section h2 {
+    color: #403E3B;
+    line-height: 38px;
+    font-size: 32px;
+    font-weight: normal;
+    text-align: center;
+    padding-top: 6rem;
+}
+
+.firm-text {
+    display: flex;
+    flex-direction: column;
+    padding-top: 8rem;
+    gap: 10px;
+}
+
+.firm-section .firm-text p {
+    color: #403E3B;
+    line-height: 24px;
+    font-size: 16px;
+    max-width: 500px;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.firm-sectionFigure {
+    display: flex;
+    gap: 30px;
+    margin: 0;
+}
+
+.firm-section .firm-text .firm-sectionFigure h3 {
+    color: #1B1A1A;
+    line-height: 26px;
+    font-size: 17px;
+    margin-bottom: 0;
+    font-weight: normal;
+}
+
+.firm-section .firm-text .firm-sectionFigure p {
+    color: #645C55;
+    line-height: 14px;
+    font-size: 14px;
+    margin-top: 0;
+}
+
+@media (max-width: 767px) {
+    .firm-section {
+        flex-direction: column;
+        gap: 0;
+        align-items: center;
+    }
+
+    .firm-section h2 {
+        color: #403E3B;
+        line-height: 38px;
+        font-size: 32px;
+        font-weight: normal;
+        text-align: center;
+        padding-top: 6rem;
+        margin-bottom: 0;
+    }
+
+    .firm-section .firm-text p {
+        color: #403E3B;
+        line-height: 24px;
+        font-size: 14px;
+        max-width: 400px;
+        margin-top: 0;
+        margin-bottom: 10px;
+    }
+}
+
+/* Reeding-section */
+
+.reeding-section {
+    background-image: url("images/Reeding House.png");
+    min-height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.reeding-sectionText {
+    display: flex;
+    flex-direction: column;
+    margin-right: 180px;
+}
+
+.reeding-section h3 {
+    font-size: 18px;
+    line-height: 20px;
+    letter-spacing: 2px;
+    font-weight: normal;
+    color: #403E3B;
+    padding: 0;
+    margin: 0;
+}
+
+.reeding-section p {
+    font-size: 17px;
+    line-height: 24px;
+    color: #645C55;
+    padding: 0;
+    margin: 0;
+}
+
+@media (max-width: 767px) {
+    .reeding-section {
+        justify-content: center;
+        margin: 0;
     }
 }
