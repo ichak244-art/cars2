@@ -306,6 +306,7 @@ header {
     display: flex;
     flex-direction: column;
     margin-right: 180px;
+    max-width: 300px;
 }
 
 .reeding-section h3 {
@@ -326,9 +327,13 @@ header {
     margin: 0;
 }
 
+
 @media (max-width: 767px) {
     .reeding-section {
         justify-content: center;
-        margin: 0;
+    }
+
+    .reeding-sectionText {
+        margin-right: 0;
     }
 }
